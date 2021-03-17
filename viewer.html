@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>Viewer</title>
+</head>
+
+<body>
+    <img src="">
+    <script>
+        // get img dom element
+        const img = document.querySelector('img');
+
+        const WS_URL = location.origin.replace(/^http/, 'ws');
+        const ws = new WebSocket(WS_URL);
+        ws.onopen = () => console.log(`Connected to ${WS_URL}`);
+        ws.onmessage = message => {
+            // set the base64 string to the src tag of the image
+            console.log(message)
+            img.src = message.data;
+        }
+    </script>
+</body>
+
+</html>
