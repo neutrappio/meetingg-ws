@@ -1,0 +1,46 @@
+{
+  "name": "meetingg-ws",
+  "version": "0.0.1",
+  "description": "Meetingg WebSocket Server",
+  "main": "server.js",
+  "scripts": {
+    "start:dev": "nodemon",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neutrapp-com/meetingg-ws.git"
+  },
+  "keywords": [
+    "Meeting",
+    "Web",
+    "Socket"
+  ],
+  "author": "Yassine Rais <yassine@rais.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neutrapp-com/meetingg-ws/issues"
+  },
+  "homepage": "https://github.com/neutrapp-com/meetingg-ws#readme",
+  "devDependencies": {
+    "@types/node": "^14.14.34",
+    "nodemon": "^2.0.7",
+    "rimraf": "^3.0.2",
+    "socket.io-client": "^4.0.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "http": "^0.0.1-security",
+    "passport-jwt.socketio": "^0.1.1",
+    "peer": "^0.6.1",
+    "pg": "^8.5.1",
+    "socket.io": "^4.0.0",
+    "socket.io-redis": "^6.0.1",
+    "socketio-jwt": "^4.6.2",
+    "socketio-jwt-auth": "^0.2.1"
+  }
+}
